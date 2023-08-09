@@ -1,4 +1,6 @@
 ---
+const pageTitle = 'Página de inicio';
+const author = 'Oved Fiso';
 ---
 
 <html lang="en">
@@ -7,17 +9,18 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Blog | FiSo</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="/about/">Sobre mi</a>
-        <a href="/blog/">Blog</a>
-      </nav>
-    </header>
-		<h1>Home</h1>
+	  <nav>
+		<a href="/">Inicio</a>
+		<a href="/about/">Sobre mi</a>
+		<a href="/blog/">Blog</a>
+	  </nav>
+	</header>
+		<h1>{pageTitle}</h1>
+		<h3>Bienvenido a la página de {author}</h3>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat aspernatur voluptates fugiat sapiente pariatur cum necessitatibus, itaque vero facilis similique aut, illo quaerat molestiae. Officia cupiditate itaque eius nam.</p>
 	</body>
 </html>
